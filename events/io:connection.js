@@ -52,7 +52,7 @@ accounts.verifyuser(cookies.getCookie(socket_cookies,"uid")).then(account => {
 				{
 					var datamsg = {
 						"user":account.name,
-						"message":messagedata.toString(),
+						"message":messagedata.toString().replace(/</g,"christmas just a week away!    "),
 						"accprofile":profileimage
 					}
 
