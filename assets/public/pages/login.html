@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta property="og:title" content="AngelDav Test Website: __pagetitle"/>
+        <meta name="description" content"__pagedescription">
+        <meta property="og:image" content="https://angeldc943.repl.co/<imageembed>">
+
+        <meta name="viewport" content="width=testgameice-width, initial-scale=1">
+        <title>AngelDav test website</title>
+        <link rel="stylesheet" href="https://angeldc943.repl.co/assets/styles/input.css">
+        <link rel="stylesheet" href="https://angeldc943.repl.co/assets/styles/main.css">
+    </head>
+
+    <body>
+
+        <section class="main" id="main">
+
+<center>
+    <style>
+        .main {
+            width:25%;
+        }
+
+        input {
+            border: none;
+            border-radius: 5px;
+            background: #ffffff;
+            color: #000;
+            text-decoration:none;
+            padding: 5px;
+            width:90%;
+        }
+
+        @media screen and (max-width: 1050px) {
+            .main {
+                width:50%;
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            .main {
+                width:75%;
+            }
+        }
+    </style>
+    <br>
+    <br>
+    <br>
+    <article>
+        <script src="https://angeldc943.repl.co/assets/scripts/hasher.js"></script>
+        <p>Username</p>
+        <input type="text" id="Username">
+        <br>
+        <br>
+        <p>Password</p>
+        <input type="password" id="Password">
+        <br>
+        <br>
+        <input type="button" value="Login" onclick="window.location = ('https://testgame.angeldc943.repl.co/login?n=' + document.getElementById('Username').value + '&p=' + document.getElementById('Password').value.hashCode());">
+    </article>
+
+    <a href="https://angeldc943.repl.co/signin">Dont have an account? sign in!</a>
+</center>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dev</title>
+	<link rel="stylesheet" href="https://angeldc943.repl.co/assets/styles/input.css">
+	<link rel="stylesheet" href="https://angeldc943.repl.co/assets/styles/main.css">
+
+	<script src="https://testgame.angeldc943.repl.co/socket.io/socket.io.js"></script>
+	<script src="https://angeldc943.repl.co/assets/scripts/threejs/main.js"></script>
+</head>
+
+<body>
+	<canvas id="Canvas3D"></canvas>
+	<div id="Chat">
+		<div id="ChatContainer">
+			
+		</div>
+		<input id="message" type="text" style="width:90%;" onkeypress="if (event.keyCode == 13) broadcast_message();">
+    	<a class="button simple" type="button" style="width:10%;" onclick="broadcast_message()">Send</a>
+	</div>
+	<script src="https://testgame.angeldc943.repl.co/assets/scripts/main.js"></script>
+	<script src="https://testgame.angeldc943.repl.co/assets/scripts/chat.js"></script>
+
+	<style>
+
+		* {
+			overflow: hidden;
+		}
+
+		#Chat {
+			position: fixed;
+			width: 190px;
+			height: 100%;
+			background: gray;
+			padding: 10px;
+			right: 0;
+		}
+
+		#ChatContainer {
+			height: 90%;
+			color:black;
+			overflow:auto;
+		}
+
+		#Canvas3D {
+			position: fixed;
+			z-index:-1;
+			width: calc(100% - 200px);
+			height: 100%;
+			top: 0;
+		}
+	</style>
+</body>
+
+</html>
